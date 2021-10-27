@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Okey:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Okey_jar</output-path>
+    <root id="archive" name="Okey.jar">
+      <element id="module-output" name="Okey" />
+    </root>
+  </artifact>
+</component>
