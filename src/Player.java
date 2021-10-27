@@ -48,10 +48,10 @@ public class Player {
                 maxScore = score;
                 bestHand = (ArrayList<Stone>) stones.clone();
             }
-            stones = (ArrayList<Stone>) origHand.clone();
-            consecutives.clear();
-            for (List<Stone> repetitive : repetitives) {
-                repetitive.clear();
+            consecutives = new HashSet<>();
+            repetitives = new ArrayList[Stone.NUMBER_OF_EACH_TYPE];
+            for (int j = 0; j < repetitives.length; j++) {
+                repetitives[j] = new ArrayList<>();
             }
         }
 
