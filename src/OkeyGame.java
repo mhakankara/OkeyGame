@@ -15,7 +15,7 @@ public class OkeyGame extends JFrame {
     private static final int PANEL_WIDTH = 1600;
     private static final int PANEL_HEIGHT = 1200;
     private static final int BOARD_SPACE = 30;
-    private static final String IMAGE_PATH = "./Stones.png";
+    private static final String IMAGE_PATH = "/resources/Stones.png";
     private static final int SPACE_BTWN_STONES = 90;
     private static final int STONE_WIDTH = 70;
     private static final int STONE_HEIGHT = 100;
@@ -42,7 +42,7 @@ public class OkeyGame extends JFrame {
     // Methods
     public void getStoneImages() {
         try {
-            BufferedImage image = ImageIO.read(new File(IMAGE_PATH));
+            BufferedImage image = ImageIO.read(getClass().getResource(IMAGE_PATH));
             stoneImages = new BufferedImage[Stone.NUMBER_OF_STONES];
 
             int x = 0;
